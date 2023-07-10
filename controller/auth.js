@@ -1,9 +1,9 @@
-const { userRegisterSchema, userLoginSchema } = require("./schema");
-const User = require("../../models/user");
+const { userRegisterSchema, userLoginSchema } = require("../schema/auth");
+const User = require("../models/user");
 const bcrypt = require('bcryptjs');
-const UserDto = require("../../dto/user");
-const JWTService = require("../../services/JWT");
-const RefreshToken = require("../../models/token")
+const UserDto = require("../dto/user");
+const JWTService = require("../services/JWT");
+const RefreshToken = require("../models/token")
 
 
 const authController = {
